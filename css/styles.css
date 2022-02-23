@@ -1,50 +1,51 @@
-
+/* ------------------------------------------- */
 /* INICIO HEADER */
 .header-container {
-    background: url('../imagenes/fondo-header.jpg') no-repeat center;
-    background-size: cover;
-    height: 100%;
+  background: url("../imagenes/fondo-header.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+.header-container .navbar {
+  background: #000;
 }
 .header-container .navbar .container-fluid img {
-    width: 65px;
-    border: 3px double #000;
-    margin-left: 40px;
+  width: 65px;
+  border: 3px double #000;
+  margin-left: 40px;
 }
-header nav {
-    background: #000;
+.header-container .navbar .container-fluid .navbar-toggler i {
+  background: #000;
+  color: #f80;
 }
-.header-container .navbar .container-fluid .navbar-toggler i{
-    background: #000;
-    color: #f80;
+.header-container .navbar .container-fluid .navbar-nav .nav-item .nav-link {
+  color: #fff;
 }
-.header-container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
-    color: #fff;
+.header-container .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+  color: #f80;
 }
-.header-container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
-    color: #f80;
+.header-container .slice-down {
+  text-align: center;
+  padding: 10px 0;
+}
+.header-container .slice-down i {
+  font-size: 40px;
+  color: #000;
+  margin-top: 30px;
+  animation: slide 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.slide-down {
-    text-align: center;
-    padding: 10px 0;
-}
-.slide-down i {
-    font-size: 40px;
-    color: #111;
-    margin-top: 30px;
-    animation: slide .6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 @keyframes slide {
-    0% {
-        transform: translateY(-50%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 /* FIN HEADER */
+/* ------------------------------------------- */
 
 /* INICIO VARIEDADES */
 .bg-variedades {
@@ -110,41 +111,45 @@ header nav {
 }
 /* FIN CONTACTO */
 
+/* ------------------------------------------- */
 /* INICIO FOOTER */
 .bg-footer {
-    background: #fa0;
-    box-shadow: 4px 6px 20px 0 #000;
+  background: #f80;
+  color: #000;
 }
-.bg-footer .row .col-12 .fs-1{
-    color: #000;
+.bg-footer .row .col-12 .fs-1 {
+  color: #000;
 }
-.bg-footer .row .col-12 .container .center .col-3 a i {
-    color: #000;
+.bg-footer .row .col-12 .container .text-center .col-3 a i {
+  color: #000;
 }
-.bg-footer .row .col-12 .container .center .col-3 a i:hover {
-    color: #fff;
+.bg-footer .row .col-12 .container .text-center .col-3 a i:hover {
+  color: #fff;
 }
 
 /* FIN FOOTER */
+/* ------------------------------------------- */
+
 
 /* Media queries */
 
 @media screen and (min-width: 520px) {
-    .bg-footer .row .img-footer img{
-        width: 100%!important;
-        max-width: 350px;
-    }
-    .container-fluid .container .row .img-contacto img {
-        max-width: 350px;
-    }
+  .bg-footer .row .img-footer img{
+      width: 100%!important;
+      max-width: 350px;
+  }
+  .container-fluid .container .row .img-contacto img {
+      max-width: 350px;
+  }
 }
 @media screen and (min-width: 768px) {
-    .header-container .container .row .col-12 .media-img-header {
-        width: 70%!important;
-        max-width: 510px;
-    }
-    .header-container .container .row .col-12 .media-img-header1 {
-        width: 50%!important;
-        max-width: 380px;
-    }
+  .header-container .container .row .col-12 .media-img-header {
+      width: 70%!important;
+      max-width: 510px;
+  }
+  .header-container .container .row .col-12 .media-img-header1 {
+      width: 50%!important;
+      max-width: 380px;
+  }
 }
+/*# sourceMappingURL=styles.css.map */
