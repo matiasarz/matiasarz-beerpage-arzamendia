@@ -1,0 +1,30 @@
+
+// INICIO FOOTER
+.bg-footer {
+    background: $colorPrincipal;
+    color: $colorOscuro;
+
+    .row {
+        .col-12 {
+            .fs-1 {
+                color: $colorOscuro;
+            }
+            
+            .container {
+                .text-center {
+                    .col-3 {
+                        a {
+                            i {
+                                color: $colorOscuro;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// FIN FOOTER

@@ -44,6 +44,9 @@ header nav {
         transform: translateY(0);
     }
 }
+.center {
+    text-align: center;
+}
 /* FIN HEADER */
 
 /* INICIO VARIEDADES */
