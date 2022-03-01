@@ -1,0 +1,62 @@
+/* ------------------------------------------- */
+/* INICIO HEADER */
+.header-container {
+    background: url('../imagenes/fondo-header.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%; 
+
+    .navbar {
+        background: $colorOscuro;
+        .container-fluid {
+
+            img {
+                width: 65px;
+                border: 3px double $colorOscuro;
+                margin-left: 40px;
+            }
+
+            .navbar-toggler {
+                i {
+                    background: $colorOscuro;
+                    color: $colorPrincipal;
+                }
+            }
+
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: $colorSecundario;
+
+                        &:hover {
+                            color: $colorPrincipal;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    .slice-down {
+        text-align: $centrar;
+        padding: 10px 0;
+
+        i {
+            font-size: 40px;
+            color: $colorOscuro;
+            margin-top: 30px;
+            animation: slide .6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+}
+@keyframes slide {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* FIN HEADER */
+/* ------------------------------------------- */
