@@ -23,11 +23,11 @@
 .header-container .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
   color: #f80;
 }
-.header-container .slide-down {
+.header-container .slice-down {
   text-align: center;
   padding: 10px 0;
 }
-.header-container .slide-down i {
+.header-container .slice-down i {
   font-size: 40px;
   color: #000;
   margin-top: 30px;
@@ -114,7 +114,6 @@
 .bg-footer {
   background: #f80;
   color: #000;
-  box-shadow: 4px 2px 20px #000;
 }
 .bg-footer .row .col-12 .fs-1 {
   color: #000;
@@ -128,6 +127,8 @@
 
 /* FIN FOOTER */
 /* ------------------------------------------- */
+
+
 /* Media queries */
 
 @media screen and (min-width: 520px) {
