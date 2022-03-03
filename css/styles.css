@@ -23,11 +23,11 @@
 .header-container .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
   color: #f80;
 }
-.header-container .slice-down {
+.header-container .slide-down {
   text-align: center;
   padding: 10px 0;
 }
-.header-container .slice-down i {
+.header-container .slide-down i {
   font-size: 40px;
   color: #000;
   margin-top: 30px;
