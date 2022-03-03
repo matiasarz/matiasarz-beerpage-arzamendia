@@ -1,153 +1,152 @@
-
+/* ------------------------------------------- */
 /* INICIO HEADER */
 .header-container {
-    background: url('../imagenes/fondo-header.jpg') no-repeat center;
-    background-size: cover;
-    height: 100%;
+  background: url("../imagenes/fondo-header.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+.header-container .navbar {
+  background: #000;
 }
 .header-container .navbar .container-fluid img {
-    width: 65px;
-    border: 3px double #000;
-    margin-left: 40px;
+  width: 65px;
+  border: 3px double #000;
+  margin-left: 40px;
 }
-header nav {
-    background: #000;
+.header-container .navbar .container-fluid .navbar-toggler i {
+  background: #000;
+  color: #f80;
 }
-.header-container .navbar .container-fluid .navbar-toggler i{
-    background: #000;
-    color: #f80;
+.header-container .navbar .container-fluid .navbar-nav .nav-item .nav-link {
+  color: #fff;
 }
-.header-container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
-    color: #fff;
+.header-container .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+  color: #f80;
 }
-.header-container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
-    color: #f80;
+.header-container .slide-down {
+  text-align: center;
+  padding: 10px 0;
+}
+.header-container .slide-down i {
+  font-size: 40px;
+  color: #000;
+  margin-top: 30px;
+  animation: slide 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.slide-down {
-    text-align: center;
-    padding: 10px 0;
-}
-.slide-down i {
-    font-size: 40px;
-    color: #111;
-    margin-top: 30px;
-    animation: slide .6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 @keyframes slide {
-    0% {
-        transform: translateY(-50%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-.center {
-    text-align: center;
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 /* FIN HEADER */
-
+/* ------------------------------------------- */
 /* INICIO VARIEDADES */
 .bg-variedades {
-    background: url('../imagenes/fondo-variedades.jpg') no-repeat fixed center;
-    background-size: cover;
+  background: url('../imagenes/fondo-variedades.jpg') no-repeat fixed center;
+  background-size: cover;
 }
 .encabezado-variedades {
-    background: #0005;
-    color: #fff;
+  background: #0005;
+  color: #fff;
 }
 .bg-text-beer {
-    color: #fff;
-    cursor: pointer;
-    transition: color, background, .8s;
+  color: #fff;
+  cursor: pointer;
+  transition: color, background, .8s;
 }
 .bg-text-beer:hover {
-    color: #f80;
-    background: #0009;
+  color: #f80;
+  background: #0009;
 }
 /* FIN VARIEDADES */
 
 /* INICIO CONTACTO */
 .form-container {
-    max-width: 900px;
-    background: #000;
+  max-width: 900px;
+  background: #000;
 }
 .container-fluid .container .text-contact {
-    color: #fff;
+  color: #fff;
 }
 .container-fluid .form-container .row .col-12 .form-input input {
-    outline: none;
-    border: none;
-    border-bottom: #f80 3px solid;
+  outline: none;
+  border: none;
+  border-bottom: #f80 3px solid;
 }
 .container-fluid .form-container .row .col-12 .form-input input:focus {
-    background: #000;
-    color: #f80;
+  background: #000;
+  color: #f80;
 }
 .container-fluid .form-container .row .col-12 .form-textarea textarea{
-    resize: none;
-    outline: none;
-    height: 120px!important;
-    border-bottom: #f80 3px solid;
+  resize: none;
+  outline: none;
+  height: 120px!important;
+  border-bottom: #f80 3px solid;
 }
 .container-fluid .form-container .row .col-12 .form-textarea textarea:focus {
-    background: #000;
-    color: #f80;
+  background: #000;
+  color: #f80;
 }
 .container-fluid .form-container .row .col-12  {
-    color: #fff;
+  color: #fff;
 }
 .container-fluid .form-container .row .boton  {
-    background: #000;
-    color: #f80;
-    border: 2px solid #f80;
-    border-radius: 5px;
-    padding: 8px;
-    width: 100px!important;
+  background: #000;
+  color: #f80;
+  border: 2px solid #f80;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100px!important;
 }
 .container-fluid .form-container .row .boton:active {
-    background: #f80;
-    color: #000;
+  background: #f80;
+  color: #000;
 }
 /* FIN CONTACTO */
-
+/* ------------------------------------------- */
 /* INICIO FOOTER */
 .bg-footer {
-    background: #fa0;
-    box-shadow: 4px 6px 20px 0 #000;
+  background: #f80;
+  color: #000;
+  box-shadow: 4px 2px 20px #000;
 }
-.bg-footer .row .col-12 .fs-1{
-    color: #000;
+.bg-footer .row .col-12 .fs-1 {
+  color: #000;
 }
-.bg-footer .row .col-12 .container .center .col-3 a i {
-    color: #000;
+.bg-footer .row .col-12 .container .text-center .col-3 a i {
+  color: #000;
 }
-.bg-footer .row .col-12 .container .center .col-3 a i:hover {
-    color: #fff;
+.bg-footer .row .col-12 .container .text-center .col-3 a i:hover {
+  color: #fff;
 }
 
 /* FIN FOOTER */
-
+/* ------------------------------------------- */
 /* Media queries */
 
 @media screen and (min-width: 520px) {
-    .bg-footer .row .img-footer img{
-        width: 100%!important;
-        max-width: 350px;
-    }
-    .container-fluid .container .row .img-contacto img {
-        max-width: 350px;
-    }
+  .bg-footer .row .img-footer img{
+      width: 100%!important;
+      max-width: 350px;
+  }
+  .container-fluid .container .row .img-contacto img {
+      max-width: 350px;
+  }
 }
 @media screen and (min-width: 768px) {
-    .header-container .container .row .col-12 .media-img-header {
-        width: 70%!important;
-        max-width: 510px;
-    }
-    .header-container .container .row .col-12 .media-img-header1 {
-        width: 50%!important;
-        max-width: 380px;
-    }
+  .header-container .container .row .col-12 .media-img-header {
+      width: 70%!important;
+      max-width: 510px;
+  }
+  .header-container .container .row .col-12 .media-img-header1 {
+      width: 50%!important;
+      max-width: 380px;
+  }
 }
+/*# sourceMappingURL=styles.css.map */
