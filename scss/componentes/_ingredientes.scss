@@ -5,8 +5,15 @@
         .row {
            .col-12 {
                 img {
-                width: 500px;
+                width: 330px;
                 height: 300px;
+                text-align: center;
+
+                @include respuesta(768px) {
+                    width: 450px;
+                    height: 300px;
+                    margin: auto;
+                }
                 }
                 
                 h3 {

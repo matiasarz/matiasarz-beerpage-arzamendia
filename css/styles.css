@@ -116,8 +116,16 @@
 /* ----------------------------------------------- */
 /* INICIO INGREDIENTES */
 .ingredientes .container .row .col-12 img {
-  width: 500px;
+  width: 330px;
   height: 300px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .ingredientes .container .row .col-12 img {
+    width: 450px;
+    height: 300px;
+    margin: auto;
+  }
 }
 .ingredientes .container .row .col-12 h3 {
   text-decoration: underline;
