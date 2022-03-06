@@ -26,6 +26,13 @@
                 }
             }
         }
+        
+        .img-footer {
+            @include respuesta(520px) {
+                width: 100%!important;
+                max-width: 350px;
+            }
+        }
     }
 }
 /* FIN FOOTER */

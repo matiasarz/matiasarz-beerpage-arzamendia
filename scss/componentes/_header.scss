@@ -36,6 +36,26 @@
         }
     }
 
+    .container {
+        .row {
+            .col-12 {
+                .media-img-header {
+                    @include respuesta(768px) {
+                        width: 70%!important;
+                        max-width: 510px;
+                    }
+                }
+
+                .media-img-header1 {
+                    @include respuesta(768px) {
+                        width: 50%!important;
+                        max-width: 380px;
+                    }
+                }
+            }
+        }
+    }
+
     .slide-down {
         text-align: $centrar;
         padding: 10px 0;

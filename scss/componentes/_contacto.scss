@@ -1,0 +1,70 @@
+@import '../base/variables';
+/* ------------------------------------------------- */
+/* INICIO CONTACTO */
+.container-fluid {
+    .form-container {
+        max-width: 900px;
+        background: $colorOscuro;
+
+        .text-contact {
+            color: $colorSecundario;
+        }
+    
+        .row {
+            .col-12 {
+                color: $colorSecundario;
+
+                .form-input {
+                    input {
+                        outline: none;
+                        border: none;
+                        border-bottom: $colorPrincipal 3px solid;
+
+                        &:focus {
+                            background: $colorOscuro;
+                            color: $colorPrincipal;
+                        }
+                    }   
+                }
+
+                .form-textarea {
+                    textarea {
+                        resize: none;
+                        outline: none;
+                        height: 120px!important;
+                        border-bottom: $colorPrincipal 3px solid;
+
+                        &:focus {
+                            background: $colorOscuro;
+                            color: $colorPrincipal;
+                        }
+                    }
+                }
+            }
+
+            .boton {
+                background: $colorOscuro;
+                color: $colorPrincipal;
+                border: 2px solid $colorPrincipal;
+                border-radius: 5px;
+                padding: 8px;
+                width: 100px!important;
+
+                &:active {
+                    background: $colorOscuro;
+                    color: $colorPrincipal;
+                }
+            }
+
+            .img-contacto {
+                img {
+                    @include respuesta(520px) {
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* INICIO CONTACTO */
+/* ------------------------------------------------- */

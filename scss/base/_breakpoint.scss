@@ -1,0 +1,13 @@
+
+
+/* MEDIA QUERIES */
+@mixin respuesta ($breakpoint) {
+    @if ($breakpoint == 520px) {
+        @media screen and (min-width: 520px) {@content}
+    }
+
+    @if ($breakpoint == 768px) {
+        @media screen and (min-width: 768px) {@content}
+    }
+}
+
