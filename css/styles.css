@@ -46,74 +46,12 @@
 }
 /* FIN HEADER */
 /* ------------------------------------------- */
-/* INICIO VARIEDADES */
-.bg-variedades {
-  background: url('../imagenes/fondo-variedades.jpg') no-repeat fixed center;
-  background-size: cover;
-}
-.encabezado-variedades {
-  background: #0005;
-  color: #fff;
-}
-.bg-text-beer {
-  color: #fff;
-  cursor: pointer;
-  transition: color, background, .8s;
-}
-.bg-text-beer:hover {
-  color: #f80;
-  background: #0009;
-}
-/* FIN VARIEDADES */
-
-/* INICIO CONTACTO */
-.form-container {
-  max-width: 900px;
-  background: #000;
-}
-.container-fluid .container .text-contact {
-  color: #fff;
-}
-.container-fluid .form-container .row .col-12 .form-input input {
-  outline: none;
-  border: none;
-  border-bottom: #f80 3px solid;
-}
-.container-fluid .form-container .row .col-12 .form-input input:focus {
-  background: #000;
-  color: #f80;
-}
-.container-fluid .form-container .row .col-12 .form-textarea textarea{
-  resize: none;
-  outline: none;
-  height: 120px!important;
-  border-bottom: #f80 3px solid;
-}
-.container-fluid .form-container .row .col-12 .form-textarea textarea:focus {
-  background: #000;
-  color: #f80;
-}
-.container-fluid .form-container .row .col-12  {
-  color: #fff;
-}
-.container-fluid .form-container .row .boton  {
-  background: #000;
-  color: #f80;
-  border: 2px solid #f80;
-  border-radius: 5px;
-  padding: 8px;
-  width: 100px!important;
-}
-.container-fluid .form-container .row .boton:active {
-  background: #f80;
-  color: #000;
-}
-/* FIN CONTACTO */
 /* ------------------------------------------- */
 /* INICIO FOOTER */
 .bg-footer {
   background: #f80;
   color: #000;
+  box-shadow: 4px 2px 20px #000;
 }
 .bg-footer .row .col-12 .fs-1 {
   color: #000;
@@ -128,26 +66,4 @@
 /* FIN FOOTER */
 /* ------------------------------------------- */
 
-
-/* Media queries */
-
-@media screen and (min-width: 520px) {
-  .bg-footer .row .img-footer img{
-      width: 100%!important;
-      max-width: 350px;
-  }
-  .container-fluid .container .row .img-contacto img {
-      max-width: 350px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-container .container .row .col-12 .media-img-header {
-      width: 70%!important;
-      max-width: 510px;
-  }
-  .header-container .container .row .col-12 .media-img-header1 {
-      width: 50%!important;
-      max-width: 380px;
-  }
-}
 /*# sourceMappingURL=styles.css.map */
