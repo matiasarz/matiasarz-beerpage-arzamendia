@@ -1,6 +1,8 @@
 @import 'base/variables';
-@import 'base/breakpoint';
+@import 'base/mixin-breakpoint';
 @import 'componentes/header';
+@import 'componentes/inicio';
 @import 'componentes/variedades';
+@import 'componentes/ingredientes';
 @import 'componentes/contacto';
 @import 'componentes/footer';

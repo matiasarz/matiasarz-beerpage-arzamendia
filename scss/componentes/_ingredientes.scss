@@ -1,0 +1,21 @@
+/* ----------------------------------------------- */
+/* INICIO INGREDIENTES */
+.ingredientes {
+    .container {
+        .row {
+           .col-12 {
+                img {
+                width: 500px;
+                height: 300px;
+                }
+                
+                h3 {
+                    text-decoration: underline;
+                    text-decoration-style: dashed;
+                    letter-spacing: 1px;
+                }
+           }
+        }
+    }
+}
+/* FIN INGREDIENTES */

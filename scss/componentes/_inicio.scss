@@ -1,0 +1,29 @@
+/* ----------------------------- */
+/* INICIO */
+.container-fluid {
+    .container {
+        .row {
+            .carrousel {
+                @include respuesta(992px) {
+                    height: calc(100vh - 50px);
+                }
+            }
+        }
+    }
+}
+.container {
+    .inicio {
+        img {
+            cursor: pointer;
+            transition: transform .4s;
+
+            &:hover {
+                @include respuesta(992px) {
+                    transform: scale(1.2);
+                    transition: transform .6s;
+                }
+            }
+        }
+    }
+}
+/* FIN INICIO */

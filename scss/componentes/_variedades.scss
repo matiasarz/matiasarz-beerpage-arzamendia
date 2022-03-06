@@ -1,0 +1,50 @@
+/* INICIO VARIEDADES */
+.bg-variedades {
+    background: url('../../imagenes/fondo-variedades.jpg') no-repeat fixed center;
+    background-size: cover;
+   
+    .container {
+        h2 {
+            background: #000a;
+            color: $colorSecundario;
+        }
+
+        .row {
+            .col-12 {
+                .row {
+                    img {
+                        transition: transform .6s;
+                        cursor: pointer;
+                        max-width: 400px;
+                        height: 250px;
+    
+                        @include respuesta(768px) {
+                            &:hover {
+                                transform: scale(1.2);
+                                transition: transform .6s;
+                            }
+                        }
+                    }
+    
+                    p {
+                        button {
+                            background: #0009;
+                            border-color: $colorPrincipal;
+                            outline: none;
+                            color: $colorPrincipal;
+                            font-weight: 700;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .collapse {
+                        .card {
+                            background: $colorOscuro;
+                            color: $colorPrincipal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

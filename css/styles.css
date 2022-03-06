@@ -59,6 +59,73 @@
 }
 /* FIN HEADER */
 /* ------------------------------------------- */
+/* ----------------------------- */
+/* INICIO */
+@media screen and (min-width: 992px) {
+  .container-fluid .container .row .carrousel {
+    height: calc(100vh - 50px);
+  }
+}
+
+.container .inicio img {
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+@media screen and (min-width: 992px) {
+  .container .inicio img:hover {
+    transform: scale(1.2);
+    transition: transform 0.6s;
+  }
+}
+
+/* FIN INICIO */
+/* INICIO VARIEDADES */
+.bg-variedades {
+  background: url("../../imagenes/fondo-variedades.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+.bg-variedades .container h2 {
+  background: #000a;
+  color: #fff;
+}
+.bg-variedades .container .row .col-12 .row img {
+  transition: transform 0.6s;
+  cursor: pointer;
+  max-width: 400px;
+  height: 250px;
+}
+@media screen and (min-width: 768px) {
+  .bg-variedades .container .row .col-12 .row img:hover {
+    transform: scale(1.2);
+    transition: transform 0.6s;
+  }
+}
+.bg-variedades .container .row .col-12 .row p button {
+  background: #0009;
+  border-color: #f80;
+  outline: none;
+  color: #f80;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.bg-variedades .container .row .col-12 .row .collapse .card {
+  background: #000;
+  color: #f80;
+}
+
+/* ----------------------------------------------- */
+/* INICIO INGREDIENTES */
+.ingredientes .container .row .col-12 img {
+  width: 500px;
+  height: 300px;
+}
+.ingredientes .container .row .col-12 h3 {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  letter-spacing: 1px;
+}
+
+/* FIN INGREDIENTES */
 /* ------------------------------------------------- */
 /* INICIO CONTACTO */
 .container-fluid .form-container {
