@@ -7,24 +7,36 @@
 
     .row {
         .col-12 {
-            .fs-1 {
-                color: $colorOscuro;
+            iframe {
+                @include respuesta(768px) {
+                    max-width: 400px;
+                    height: 200px;
+                }
             }
-            
-            .container {
-                .text-center {
-                    .col-3 {
-                        a {
-                            i {
-                                color: $colorOscuro;
-                                &:hover {
-                                    color: #fff;
-                                }
+
+            .row {
+                .container {
+                    .row {
+                        .col-3 {
+                            a {
+                                i {
+                                    color: $colorOscuro;
+
+                                    &:hover {
+                                        color: $colorSecundario;
+                                    }
+                                } 
                             }
                         }
                     }
                 }
             }
+        }
+
+        hr {
+            width: 90%;
+            border: 1px solid $colorOscuro;
+            opacity: 1!important;
         }
         
         .img-footer {
