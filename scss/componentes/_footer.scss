@@ -5,6 +5,11 @@
     color: $colorOscuro;
     box-shadow: 4px 2px 20px #000;
 
+    hr {
+        width: 90%;
+        opacity: 1!important;
+    }
+
     .row {
         .col-12 {
             iframe {
@@ -23,7 +28,7 @@
                                     color: $colorOscuro;
 
                                     &:hover {
-                                        color: $colorSecundario;
+                                        color: map-get($eventos-color,cl-footer);
                                     }
                                 } 
                             }
@@ -31,12 +36,6 @@
                     }
                 }
             }
-        }
-
-        hr {
-            width: 90%;
-            border: 1px solid $colorOscuro;
-            opacity: 1!important;
         }
         
         .img-footer {

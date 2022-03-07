@@ -1,4 +1,4 @@
-@import '../base/variables';
+
 /* ------------------------------------------------- */
 /* INICIO CONTACTO */
 .container-fluid {
@@ -21,8 +21,8 @@
                         border-bottom: $colorPrincipal 3px solid;
 
                         &:focus {
-                            background: $colorOscuro;
-                            color: $colorPrincipal;
+                            background: map-get($eventos-color,bg-contac);
+                            color: map-get($eventos-color,cl-contac);
                         }
                     }   
                 }
@@ -35,8 +35,8 @@
                         border-bottom: $colorPrincipal 3px solid;
 
                         &:focus {
-                            background: $colorOscuro;
-                            color: $colorPrincipal;
+                            background: map-get($eventos-color,bg-contac);
+                            color: map-get($eventos-color,cl-contac);
                         }
                     }
                 }
@@ -51,8 +51,8 @@
                 width: 100px!important;
 
                 &:active {
-                    background: $colorOscuro;
-                    color: $colorPrincipal;
+                    background: map-get($eventos-color,bg-contac);
+                    color: map-get($eventos-color,cl-contac);
                 }
             }
 

@@ -20,7 +20,7 @@
     
                         @include respuesta(768px) {
                             &:hover {
-                                transform: scale(1.2);
+                                transform: scale(1.1);
                                 transition: transform .6s;
                             }
                         }
@@ -41,6 +41,18 @@
                         .card {
                             background: $colorOscuro;
                             color: $colorPrincipal;
+                        }
+                    }
+
+                    .text-center {
+                        .bg-comprar {
+                            @extend %botones;
+
+                            &:active {
+                                color: map-get($eventos-color,cl-varie);
+                                transition: color;
+                                border-bottom: 2px solid $colorSecundario;
+                            }
                         }
                     }
                 }

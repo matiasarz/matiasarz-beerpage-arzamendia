@@ -28,7 +28,7 @@
                         color: $colorSecundario;
 
                         &:hover {
-                            color: $colorPrincipal;
+                            color: map-get($eventos-color,cl-header);
                         } 
                     }
                 }
