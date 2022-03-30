@@ -95,7 +95,7 @@
   background: url("../imagenes/fondo-variedades.jpg") no-repeat fixed center;
   background-size: cover;
 }
-.bg-variedades .container h2 {
+.bg-variedades .container h1 {
   background: #000a;
   color: #fff;
 }
@@ -118,10 +118,16 @@
   color: #f80;
   font-weight: 700;
   border-radius: 10px;
+  width: 120px;
+  box-shadow: none;
 }
-.bg-variedades .container .row .col-12 .row .collapse .card {
+.bg-variedades .container .row .col-12 .row .collapse {
   background: #000;
-  color: #f80;
+  color: #fff;
+}
+.bg-variedades .container .row .col-12 .row .collapse .card, .bg-variedades .container .row .col-12 .row .collapse .card-body {
+  background: #000;
+  color: #fff;
 }
 .bg-variedades .container .row .col-12 .row .text-center .bg-comprar:active {
   color: #f80;
@@ -145,10 +151,29 @@
 }
 .ingredientes .container .row .col-12 h3 {
   text-decoration: underline;
-  text-decoration-style: dashed;
-  letter-spacing: 1px;
+}
+.ingredientes .container .bg-insumos {
+  background: #0006;
+}
+.ingredientes .container .bg-insumos h2 {
+  color: #fff;
+}
+.ingredientes .container .bg-insumos .py-2 div {
+  color: #fff;
 }
 
+@media only screen and (min-width: 450px) {
+  .ingredientes .container .layer .row .col-12 img {
+    width: 370px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .ingredientes .container .layer .row .col-12 img {
+    width: 330px;
+    height: 260px;
+  }
+}
 /* FIN INGREDIENTES */
 /* ------------------------------------------------- */
 /* INICIO CONTACTO */
@@ -166,19 +191,22 @@
   outline: none;
   border: none;
   border-bottom: #f80 3px solid;
+  background-color: #000;
+  color: #fff;
 }
 .container-fluid .form-container .row .col-12 .form-input input:focus {
-  background: #000;
   color: #f80;
 }
 .container-fluid .form-container .row .col-12 .form-textarea textarea {
   resize: none;
   outline: none;
   height: 120px !important;
+  border: none;
   border-bottom: #f80 3px solid;
+  background: #000;
+  color: #fff;
 }
 .container-fluid .form-container .row .col-12 .form-textarea textarea:focus {
-  background: #000;
   color: #f80;
 }
 .container-fluid .form-container .row .boton {
@@ -186,12 +214,11 @@
   color: #f80;
   border: 2px solid #f80;
   border-radius: 5px;
-  padding: 8px;
   width: 100px !important;
 }
 .container-fluid .form-container .row .boton:active {
-  background: #000;
-  color: #f80;
+  background: #f80;
+  color: #000;
 }
 @media screen and (min-width: 520px) {
   .container-fluid .form-container .row .img-contacto img {

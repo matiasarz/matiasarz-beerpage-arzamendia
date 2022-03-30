@@ -1,28 +1,52 @@
 /* ----------------------------------------------- */
 /* INICIO INGREDIENTES */
 .ingredientes {
-    .container {
+    .container {        
         .row {
-           .col-12 {
+            .col-12 {
                 img {
-                width: 330px;
-                height: 300px;
-                text-align: center;
-
+                    width: 330px;
+                    height: 300px;
+                    text-align: center;
+     
                 @include respuesta(768px) {
                     width: 450px;
                     height: 300px;
                     margin: auto;
                 }
                 }
-                
+                     
                 h3 {
                     text-decoration: underline;
-                    text-decoration-style: dashed;
-                    letter-spacing: 1px;
                 }
-           }
+            }
         }
+        .bg-insumos {
+            background: #0006;
+            
+            h2 {
+                color: $colorSecundario;
+            }
+            
+            .py-2 {
+                div {
+                    color: $colorSecundario;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .ingredientes .container .layer .row .col-12 img {
+        width: 370px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .ingredientes .container .layer .row .col-12 img {
+        width: 330px;
+        height: 260px;
     }
 }
 /* FIN INGREDIENTES */

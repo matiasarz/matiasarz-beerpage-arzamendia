@@ -4,7 +4,7 @@
     background-size: cover;
    
     .container {
-        h2 {
+        h1 {
             background: #000a;
             color: $colorSecundario;
         }
@@ -34,14 +34,19 @@
                             color: $colorPrincipal;
                             font-weight: 700;
                             border-radius: 10px;
+                            width: 120px;
+                            box-shadow: none;
                         }
                     }
 
                     .collapse {
-                        .card {
                             background: $colorOscuro;
-                            color: $colorPrincipal;
-                        }
+                            color: $colorSecundario;
+                            
+                            .card, .card-body {
+                                background: $colorOscuro;
+                                color: $colorSecundario;
+                            }
                     }
 
                     .text-center {

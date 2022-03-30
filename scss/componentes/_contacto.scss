@@ -19,10 +19,11 @@
                         outline: none;
                         border: none;
                         border-bottom: $colorPrincipal 3px solid;
+                        background-color: $colorOscuro;
+                        color: $colorSecundario;
 
                         &:focus {
-                            background: map-get($eventos-color,bg-contac);
-                            color: map-get($eventos-color,cl-contac);
+                            color: map-get($eventos-color,cl-input);
                         }
                     }   
                 }
@@ -32,11 +33,13 @@
                         resize: none;
                         outline: none;
                         height: 120px!important;
+                        border: none;
                         border-bottom: $colorPrincipal 3px solid;
+                        background: map-get($eventos-color,bg-contac);
+                        color: $colorSecundario;
 
                         &:focus {
-                            background: map-get($eventos-color,bg-contac);
-                            color: map-get($eventos-color,cl-contac);
+                            color: map-get($eventos-color,cl-input);
                         }
                     }
                 }
@@ -47,12 +50,11 @@
                 color: $colorPrincipal;
                 border: 2px solid $colorPrincipal;
                 border-radius: 5px;
-                padding: 8px;
                 width: 100px!important;
 
                 &:active {
-                    background: map-get($eventos-color,bg-contac);
-                    color: map-get($eventos-color,cl-contac);
+                    background: map-get($eventos-color,bg-boton);
+                    color: map-get($eventos-color,cl-boton);
                 }
             }
 
